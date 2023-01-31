@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SavingUIStates</string>
+    <string name="enter_a_name">Enter a name</string>
+    <string name="_1">1</string>
+    <string name="value">Value</string>
+    <string name="standard_font">Standard Font</string>
+    <string name="cursive_font">Cursive Font</string>
+    <string name="monospace_font">Monospace Font</string>
 </resources>

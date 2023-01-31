@@ -10,23 +10,65 @@
         android:id="@+id/value_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Value"
+        android:text="@string/value"
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="141dp"
+        android:layout_width="139dp"
         android:layout_height="83dp"
         android:layout_marginStart="135dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="135dp"
-        android:text="Button"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/_1"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/value_text" />
+
+    <EditText
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="58dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/enter_a_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="196dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="108dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_text">
+
+        <RadioButton
+            android:id="@+id/standard_font_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/standard_font" />
+
+        <RadioButton
+            android:id="@+id/monospace_font_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/monospace_font" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
